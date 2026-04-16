@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Professional Resume Builder</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<h1 class="title">Professional Resume Builder</h1>
+
+<div class="container">
+
+<!-- FORM -->
+<div class="form">
+
+<input id="name" placeholder="Full Name">
+<input id="address" placeholder="Address">
+<input id="phone" placeholder="Phone">
+<input id="email" placeholder="Email">
+<input id="linkedin" placeholder="LinkedIn">
+
+<textarea id="objective" placeholder="Career Objective"></textarea>
+<textarea id="education" placeholder="Education"></textarea>
+<textarea id="skills" placeholder="Technical Skills"></textarea>
+<textarea id="projects" placeholder="Projects"></textarea>
+<textarea id="certifications" placeholder="Certifications"></textarea>
+<textarea id="strengths" placeholder="Key Strengths"></textarea>
+<textarea id="languages" placeholder="Languages Known"></textarea>
+
+<button onclick="generateResume()">Generate Resume</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+</div>
+
+<!-- PREVIEW -->
+<div class="preview" id="preview"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
